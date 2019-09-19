@@ -47,7 +47,9 @@ fi
 
 info 'Updating Homebrew...'
 brew update && brew upgrade
-
+# When install or reinstall a formula, homebrew automatically update itself before installing the formula.
+# This will disable auto update
+export HOMEBREW_NO_AUTO_UPDATE=1
 success 'Homebrew was successfully installed!'
 
 # info 'Installing zsh'
