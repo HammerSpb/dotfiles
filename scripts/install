@@ -1,0 +1,9 @@
+#!/bin/sh
+# Author: Roman Fedoseev (Fedoseev.Roman@gmail.com)
+# Description: The following script is the part of set of .dotfiles
+# Run all dotfiles installers.
+
+cd "$(dirname $0)"/..
+
+# find the installers and run them iteratively
+find . -name install.sh | while read installer ; do sh -c "${installer}" ; done

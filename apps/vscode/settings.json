@@ -1,0 +1,88 @@
+// Author: Roman Fedoseev (Fedoseev.Roman@gmail.com)
+// Description: The following script is the part of set of .dotfiles
+
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "material-icon-theme.showUpdateMessage": false,
+  "workbench.sideBar.location": "left",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // "javascript.validate.enable": false,
+  // "files.autoSave": "off",
+  // "standard.autoFixOnSave": false,
+  // "editor.formatOnSave": false,
+  // "prettier.printWidth": 120,
+  // "prettier.singleQuote": true,
+  // "prettier.jsxBracketSameLine": true,
+  // "prettier.arrowParens": "avoid",
+  // "prettier.semi": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/build": true
+  },
+  "eslint.enable": false,
+  // "beautify.onSave": true,
+  // "editor.formatOnSave": true,
+  // "beautify.JSfiles": [
+  //     "js",
+  //     "json",
+  //     "jsbeautifyrc",
+  //     "jshintrc",
+  //     "ts"
+  // ]
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressFileNotUnderSourceControlWarning": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "npm.enableScriptExplorer": true,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "git.autofetch": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.featureSet": "insiders",
+  "explorer.confirmDelete": false,
+  "aws.samcli.location": "/usr/local/bin/sam",
+  "aws.profile": "default",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.validate": false,
+
+  // Font settings
+  // https://github.com/tonsky/FiraCode
+  // https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+  "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  // "editor.tabSize": 2,
+
+  // Terminal settings
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 25000,
+  "terminal.external.osxExec": "iTerm.app",
+}

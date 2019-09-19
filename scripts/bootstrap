@@ -1,0 +1,106 @@
+#!/bin/sh
+# Author: Roman Fedoseev (Fedoseev.Roman@gmail.com)
+# Description: The following script is the part of set of .dotfiles
+source ./scripts/utils.sh
+
+cd "$(dirname "$0")/.."
+export DOTFILES=$(pwd -P)
+
+# set -e
+
+echo ''
+
+setup_gitconfig () {
+  if ! [ -f git/gitconfig.local.symlink ]
+  then
+    info 'Setup gitconfig'
+
+    git_credential='cache'
+    if [ "$(uname -s)" == "Darwin" ]
+    then
+      git_credential='osxkeychain'
+    fi
+
+    user ' - What is your github author name?'
+    read -e git_authorname
+    user ' - What is your github author email?'
+    read -e git_authoremail
+
+    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
+
+    success 'gitconfig'
+  fi
+}
+
+install_dotfiles () {
+  info 'Installing dotfiles'
+
+  local overwrite_all=false backup_all=false skip_all=false
+
+  for src in $(find -H "$DOTFILES" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+  do
+    dst="$HOME/.$(basename "${src%.*}")"
+    link_file "$src" "$dst"
+  done
+}
+
+
+# info 'Setting up your Mac'
+# user 'Did you update macOS to the latest version from the App Store?'
+# select yn in "Yes" "No"; do
+#     case $yn in
+#         Yes ) break;;
+#         No ) success 'Update your macOS to the latest version and then try again.' && exit;;
+#     esac
+# done
+
+# info 'Do you want to update your Mac apps to the latest versions?'
+# select yn in "Yes" "No"; do
+#     case $yn in
+#         Yes ) info echo "› sudo softwareupdate -i -a" && sudo softwareupdate -i -a;;
+#         No ) break;;
+#     esac
+# done
+
+# info 'Did you install Xcode from the App Store?'
+# select yn in "Yes" "No"; do
+#     case $yn in
+#         Yes ) break;;
+#         No ) success 'Install Xcode from the App Store, open it and accept the license agreement!' && exit;;
+#     esac
+# done
+
+# info 'Installing Xcode command line tools'
+# # xcode-select --install
+
+# info 'Installing Homebrew'
+# # Check for Homebrew
+# if test ! $(which brew); then
+#     # Install the correct homebrew for each OS type
+#     if test "$(uname)" = "Darwin"; then
+#         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#     elif test "$(expr substr $(uname -s) 1 5)" = "Linux"; then
+#         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+#     fi
+
+# fi
+
+setup_gitconfig
+install_dotfiles
+
+if [ "$(uname -s)" == "Darwin" ]
+then
+  info "Installing dependencies"
+  if source scripts/install
+  then
+    success "Dependencies installed"
+  else
+    fail "Error installing dependencies"
+  fi
+fi
+
+info 'Cleaning up brew installs'
+brew cleanup
+
+echo ''
+success 'All installed!'
