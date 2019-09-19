@@ -82,9 +82,6 @@ done
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
-# init Ruby env
-eval "$(rbenv init -)"
-
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
