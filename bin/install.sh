@@ -6,4 +6,4 @@ source $DOTFILES/scripts/utils.sh
 echo "Installing commands..."
 
 # Symlink this directory to home
-link_file $DOTFILES/bin $HOME/.bin
+ln -s $DOTFILES/bin $HOME/.bin

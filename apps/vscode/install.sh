@@ -12,9 +12,9 @@ info "Setting up VSCode..."
 # 5. VSCode Extensions & Extensions Configurations
 # 6. Workspaces Folder
 
-link_file "$HOME/Library/Application Support/Code/User/settings.json" "$DOTFILES/apps/vscode/settings.json"
-link_file "$HOME/Library/Application Support/Code/User/keybindings.json" "$DOTFILES/apps/vscode/keybindings.json"
-link_file "$HOME/Library/Application Support/Code/User" "$DOTFILES/apps/vscode/snippets/"
+ln -s "$DOTFILES/apps/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+ln -s "$DOTFILES/apps/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
+ln -s "$DOTFILES/apps/vscode/snippets/" "$HOME/Library/Application Support/Code/User"
 
 vscode_extensions=(
     # burkeholland.simple-react-snippets      # Dead simple React snippets you will actually use
