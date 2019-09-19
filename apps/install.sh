@@ -13,6 +13,7 @@ apps=(
     # Click it to prevent your Mac from automatically going to sleep,
     # dimming the screen or starting screen savers
     caffeine
+    spectacle
     # docker
     dropbox
     # Database IDEs
