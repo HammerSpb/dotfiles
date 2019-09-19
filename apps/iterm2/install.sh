@@ -5,8 +5,6 @@ source $DOTFILES/scripts/utils.sh
 
 info "Setting up iTerm2..."
 
-user $DOTFILES/scripts/utils.sh
-
 # Symlink preferences
 
 # Specify the preferences directory
