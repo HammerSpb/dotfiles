@@ -23,9 +23,9 @@ vscode_extensions=(
     # dbaeumer.vscode-eslint                  # Integrates ESLint JavaScript into VS Code.
     # esbenp.prettier-vscode                  # VS Code plugin for prettier/prettier
     # numso.prettier-standard-vscode          # VS Code plugin for prettier + standard
-    # PKief.material-icon-theme               # Material Design Icons for Visual Studio Code
     # xabikos.JavaScriptSnippets              # Code snippets for JavaScript in ES6 syntax
 
+    PKief.material-icon-theme               # Material Design Icons for Visual Studio Code
     chakrounanas.turbo-console-log          # Automating the process of writing meaningful log messages.
     vincaslt.highlight-matching-tag         # Highlights matching closing or opening tag
     aaron-bond.better-comments              # Improve your code commenting by annotating with alert, informational, TODOs, and more!
