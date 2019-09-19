@@ -8,8 +8,9 @@ zsh_packages=(zsh zsh-completions)
 brew_install_arr ${zsh_packages[@]}
 
 info 'Setting up zsh as the default shell'
-# sudo sh -c $(which zsh) >> /etc/shells
-echo 'export PATH="/usr/local/bin:$PATH"' >> $HOME/.zshrc
+echo $(which zsh) | sudo tee -a /etc/shells > /dev/null
+
+info 'Make the homebrew copy of zsh your default shell'
 chsh -s $(which zsh)
 
 success 'Zsh was successfully installed!'
