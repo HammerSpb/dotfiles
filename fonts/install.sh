@@ -12,6 +12,7 @@ fonts=(
     font-fira-code
     font-hack-nerd-font
     font-droidsansmono-nerd-font-mono
+    font-droidsansmono-nerd-font
     font-open-sans
     font-lato
     font-roboto
