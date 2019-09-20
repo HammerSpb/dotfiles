@@ -8,8 +8,8 @@ info "Setting up iTerm2..."
 # Symlink preferences
 
 # Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES/apps/iterm2"
+sudo defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES/apps/iterm2"
 # Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+sudo defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 success 'iTerm2 was successfully installed!'
