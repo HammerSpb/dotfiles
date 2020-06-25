@@ -78,6 +78,7 @@ binaries=(
     tree
     hub
     git
+    svn
 )
 brew_install_arr ${binaries[@]}
 
