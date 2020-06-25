@@ -64,7 +64,7 @@ vscode_extensions=(
     vstirbu.vscode-mermaid-preview
 )
 
-info "Installing VSCode Extensions" 
+info "Installing VSCode Extensions"
 for i in ${vscode_extensions[@]}; do
   info "Installing ${i}"
   code --install-extension $i
