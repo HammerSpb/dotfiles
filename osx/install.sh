@@ -38,9 +38,9 @@ info 'Installing Homebrew...'
 if test ! $(which brew); then
     # Install the correct homebrew for each OS type
     if test "$(uname)" = "Darwin"; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     elif test "$(expr substr $(uname -s) 1 5)" = "Linux"; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
     fi
 
 fi
