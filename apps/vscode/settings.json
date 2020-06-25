@@ -6,7 +6,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0,
   "material-icon-theme.showUpdateMessage": false,
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -25,7 +25,7 @@
     "**/bower_components": true,
     "**/build": true
   },
-  "eslint.enable": false,
+  "eslint.enable": true,
   // "beautify.onSave": true,
   // "editor.formatOnSave": true,
   // "beautify.JSfiles": [
@@ -53,16 +53,8 @@
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "git.autofetch": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "liveshare.featureSet": "insiders",
   "explorer.confirmDelete": false,
-  "aws.samcli.location": "/usr/local/bin/sam",
-  "aws.profile": "default",
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
@@ -72,7 +64,6 @@
   // https://github.com/tonsky/FiraCode
   // https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
   "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
@@ -80,9 +71,17 @@
 
   // Terminal settings
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.fontFamily": "DroidSansMono Nerd Font Mono",
+  "terminal.integrated.fontFamily": "DroidSansMono Nerd Font",
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.scrollback": 25000,
   "terminal.external.osxExec": "iTerm.app",
+  "http.proxyStrictSSL": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.logMessagePrefix": "TCL",
+  "turboConsoleLog.quote": "'",
 }
