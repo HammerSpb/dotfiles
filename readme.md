@@ -1,6 +1,8 @@
-# Dries's Dotfiles
+# Dotfiles
 
 Public repository for my personal dotfiles.
+
+Based on  [Holman dotfiles](github.com/holman/dotfiles)
 
 ## What Is This?
 
