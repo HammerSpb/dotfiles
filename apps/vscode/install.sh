@@ -52,6 +52,16 @@ vscode_extensions=(
     steoates.autoimport                     # Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX
     Tyriar.sort-lines                       # Sorts lines of text
     wix.vscode-import-cost                  # Display import/require package size in the editor
+    andys8.jest-snippets
+    bpruitt-goddard.mermaid-markdown-syntax-highlighting
+    capaj.vscode-exports-autocomplete
+    dbaeumer.vscode-eslint
+    EditorConfig.EditorConfig
+    esbenp.prettier-vscode
+    joelday.docthis
+    streetsidesoftware.code-spell-checker
+    VisualStudioExptTeam.vscodeintellicode
+    vstirbu.vscode-mermaid-preview
 )
 
 info "Installing VSCode Extensions" 
