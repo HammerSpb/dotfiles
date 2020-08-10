@@ -71,7 +71,7 @@
 
   // Terminal settings
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.fontFamily": "DroidSansMono Nerd Font",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.scrollback": 25000,
