@@ -27,6 +27,36 @@ You can configure your Mac in 5 minutes with these steps:
     scripts/bootstrap
     ```
 
+## What you will get
+
+### Zsh
+Install and configure zsh as the default shell with `powerlevel9k` theme
+You will get a set of aliases
+
+`reloadcli` - "source $HOME/.zshrc"
+
+`reloaddns` - "dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+
+`weather` - "curl -4 http://wttr.in"
+
+`dotfiles` - "cd $DOTFILES"
+
+`library` - "cd $LIBRARY"
+
+### Oh-my-zsh
+
+### Node
+
+### Git
+
+### Fonts
+
+### Applications
+
+### MacOS
+
+    
+
 ## Thanks To...
 
 I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. Also, [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world. :earth_africa: :heart:
