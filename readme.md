@@ -30,7 +30,8 @@ You can configure your Mac in 5 minutes with these steps:
 ## What you will get
 
 ### Zsh
-Install and configure zsh as the default shell with `powerlevel9k` theme
+
+Default shell with `powerlevel9k` theme
 
 You will get some useful aliases:
 
@@ -44,11 +45,28 @@ You will get some useful aliases:
 
 - `library` - "cd $LIBRARY"
 
-### Oh-my-zsh
+### Oh-My-Zsh
+
+Community-driven framework for managing your zsh configuration
 
 ### Node
 
 ### Git
+
+Aliases:
+
+- `co` - checkout
+
+- `br` - branch
+
+- `st` - status
+
+- `ci` - commit
+
+- `lg` - log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+- `hist` - log --pretty=format:'%Cred%h %Cgreen(%ad)%Creset - %s%d %C(bold blue)[%an]%Creset' --graph --date=short
+[
 
 ### Fonts
 
