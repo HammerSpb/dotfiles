@@ -82,6 +82,39 @@ Aliases:
 
 ### Applications
 
+Development apps
+
+- `npm` - Package manager for the JavaScript programming language
+- `yarn` - Package manager that doubles down as project manager
+- `awscli` - The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services
+- `php` - Popular general-purpose scripting language
+- `mysql` - Open-source relational database management system
+- `nginx` - Web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache
+- `redis` - In-memory data structure project implementing a distributed, in-memory key–value database with optional durability
+
+Other useful apps
+
+- `visual-studio-code` - Code editor redefined and optimized for building and debugging modern web and cloud applications
+- `iterm2` - Terminal emulator for macOS that does amazing things
+- `caffeine` - Prevent your Mac from automatically going to sleep, dimming the screen or starting screen savers
+- `rectangle` - Move and resize windows in macOS using keyboard shortcuts or snap areas
+- `dropbox` - File hosting service 
+- `mysqlworkbench` - Visual database design tool that integrates SQL development, administration, database design, creation and maintenance into a single integrated development environment for the MySQL database system
+- `sequel-pro` - Fast, easy-to-use Mac database management application for working with MySQL databases
+- `tableplus` - Modern, native client with intuitive GUI tools to create, access, query & edit multiple relational databases: MySQL, PostgreSQL, SQLite, Microsoft SQL Server, ...
+- `insomnia` - Cross-platform GraphQL and REST client
+- `transmit` - File transfer client program for macOS
+- `zenmap` - Official cross-platform Nmap Security Scanner GUI
+- `firefox` - Free and open-source web browser developed by the Mozilla Foundation
+- `google-chrome` - Cross-platform web browser developed by Google
+- `vagrant` - Vagrant is an open-source software product for building and maintaining portable virtual software development environments
+- `virtualbox` - Free and open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation
+- `virtualbox-extension-pack` - Binary package intended to extend the functionality of VirtualBox
+- `skype` - Telecommunications application that specializes in providing video chat and voice calls between computers, tablets, mobile devices, the Xbox One console, and smartwatches over the Internet
+- `slack` - proprietary business communication platform developed by American software company Slack Technologies
+- `aerial` - Screen saver
+- `vlc` - Free and open-source portable cross-platform media player software and streaming media server
+
 ### MacOS
 
     
