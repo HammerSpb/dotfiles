@@ -31,17 +31,18 @@ You can configure your Mac in 5 minutes with these steps:
 
 ### Zsh
 Install and configure zsh as the default shell with `powerlevel9k` theme
-You will get a set of aliases
 
-`reloadcli` - "source $HOME/.zshrc"
+You will get some useful aliases:
 
-`reloaddns` - "dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+- `reloadcli` - "source $HOME/.zshrc"
 
-`weather` - "curl -4 http://wttr.in"
+- `reloaddns` - "dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 
-`dotfiles` - "cd $DOTFILES"
+- `weather` - "curl -4 http://wttr.in"
 
-`library` - "cd $LIBRARY"
+- `dotfiles` - "cd $DOTFILES"
+
+- `library` - "cd $LIBRARY"
 
 ### Oh-my-zsh
 
