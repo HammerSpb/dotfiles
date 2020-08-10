@@ -25,8 +25,13 @@ Follow these install instructions to setup a new OS X system.
 11. Follow the remaining [app installation instructions](./apps/readme.md)
 
 ## Thanks To...
+[Holman dotfiles](https://github.com/holman/dotfiles)
 
-I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. Also, [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world. :earth_africa: :heart:
+Some other interesting projects :earth_africa: :heart:
+1. [Github does dotfiles](https://dotfiles.github.io/)
+2. [Zach Holman](https://github.com/holman/dotfiles)
+3. [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+4. [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/)
 
 ## License
 
