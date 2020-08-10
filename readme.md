@@ -70,6 +70,16 @@ Aliases:
 
 ### Fonts
 
+- font-fira-code
+- font-hack-nerd-font
+- font-open-sans
+- font-lato
+- font-roboto
+- font-source-code-pro
+- font-source-sans-pro
+- font-source-serif-pro
+- font-source-code-pro-for-powerline
+
 ### Applications
 
 ### MacOS
