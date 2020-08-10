@@ -49,8 +49,6 @@ You will get some useful aliases:
 
 Community-driven framework for managing your zsh configuration
 
-### Node
-
 ### Git
 
 Aliases:
@@ -114,8 +112,6 @@ Other useful apps
 - `slack` - proprietary business communication platform developed by American software company Slack Technologies
 - `aerial` - Screen saver
 - `vlc` - Free and open-source portable cross-platform media player software and streaming media server
-
-### MacOS
 
     
 
