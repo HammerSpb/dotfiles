@@ -11,6 +11,8 @@ export PROJECTS=~/Code
 export ZSH=$HOME/.oh-my-zsh
 # export FPATH="/usr/local/share/zsh/functions:$FPATH"
 
+ZSH_DISABLE_COMPFIX="true"
+
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
