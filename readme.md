@@ -2,7 +2,7 @@
 
 Public repository for my personal dotfiles.
 
-Based on  [Holman dotfiles](github.com/holman/dotfiles)
+Based on  [Holman dotfiles](https://github.com/holman/dotfiles)
 
 ## What Is This?
 
