@@ -72,8 +72,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
-alias lsa='ls -lA --color'
+if ls --help 2>&1 | grep -q -- --color
+then
+    alias ls='ls --color=auto -F'
+    alias lsa='ls -la --color=auto -F'
+else
+    alias ls='ls -FG'
+    alias lsa='ls -la -FG'
+fi
 alias nvim='nvim'
 alias c='clear'
 
