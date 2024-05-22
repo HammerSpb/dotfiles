@@ -20,39 +20,121 @@ font:
     style: Bold Italic
   size: 14
 
-# Kanagawa Alacritty Colors
+# catppuccin-mocha
+
 colors:
   primary:
-    background: "0x1f1f28"
-    foreground: "0xdcd7ba"
+    background: "#1e1e2e"
+    foreground: "#cdd6f4"
+    dim_foreground: "#7f849c"
+    bright_foreground: "#cdd6f4"
 
-  normal:
-    black: "0x090618"
-    red: "0xc34043"
-    green: "0x76946a"
-    yellow: "0xc0a36e"
-    blue: "0x7e9cd8"
-    magenta: "0x957fb8"
-    cyan: "0x6a9589"
-    white: "0xc8c093"
+  cursor:
+    text: "#1e1e2e"
+    cursor: "#f5e0dc"
 
-  bright:
-    black: "0x727169"
-    red: "0xe82424"
-    green: "0x98bb6c"
-    yellow: "0xe6c384"
-    blue: "0x7fb4ca"
-    magenta: "0x938aa9"
-    cyan: "0x7aa89f"
-    white: "0xdcd7ba"
+  vi_mode_cursor:
+    text: "#1e1e2e"
+    cursor: "#b4befe"
+
+  search:
+    matches:
+      foreground: "#1e1e2e"
+      background: "#a6adc8"
+
+    focused_match:
+      foreground: "#1e1e2e"
+      background: "#a6e3a1"
+
+  footer_bar:
+    foreground: "#1e1e2e"
+    background: "#a6adc8"
+
+  hints:
+    start:
+      foreground: "#1e1e2e"
+      background: "#f9e2af"
+
+    end:
+      foreground: "#1e1e2e"
+      background: "#a6adc8"
 
   selection:
-    background: "0x2d4f67"
-    foreground: "0xc8c093"
+    text: "#1e1e2e"
+    background: "#f5e0dc"
 
-  indexed_colors:
-    - { index: 16, color: "0xffa066" }
-    - { index: 17, color: "0xff5d62" }
+  normal:
+    black: "#45475a"
+    red: "#f38ba8"
+    green: "#a6e3a1"
+    yellow: "#f9e2af"
+    blue: "#89b4fa"
+    magenta: "#f5c2e7"
+    cyan: "#94e2d5"
+    white: "#bac2de"
+
+  bright:
+    black: "#585b70"
+    red: "#f38ba8"
+    green: "#a6e3a1"
+    yellow: "#f9e2af"
+    blue: "#89b4fa"
+    magenta: "#f5c2e7"
+    cyan: "#94e2d5"
+    white: "#a6adc8"
+
+  dim:
+    black: "#45475a"
+    red: "#f38ba8"
+    green: "#a6e3a1"
+    yellow: "#f9e2af"
+    blue: "#89b4fa"
+    magenta: "#f5c2e7"
+    cyan: "#94e2d5"
+    white:
+      "#bac2de"
+
+      #[[colors.indexed_colors]]
+      #index = 16
+      #color = "#fab387"
+
+      #[[colors.indexed_colors]]
+      #index = 17
+      #color = "#f5e0dc"
+
+# Kanagawa Alacritty Colors
+#colors:
+#  primary:
+#    background: "0x1f1f28"
+#    foreground: "0xdcd7ba"
+#
+#  normal:
+#    black: "0x090618"
+#    red: "0xc34043"
+#    green: "0x76946a"
+#    yellow: "0xc0a36e"
+#    blue: "0x7e9cd8"
+#    magenta: "0x957fb8"
+#    cyan: "0x6a9589"
+#    white: "0xc8c093"
+#
+#  bright:
+#    black: "0x727169"
+#    red: "0xe82424"
+#    green: "0x98bb6c"
+#    yellow: "0xe6c384"
+#    blue: "0x7fb4ca"
+#    magenta: "0x938aa9"
+#    cyan: "0x7aa89f"
+#    white: "0xdcd7ba"
+#
+#  selection:
+#    background: "0x2d4f67"
+#    foreground: "0xc8c093"
+#
+#  indexed_colors:
+#    - { index: 16, color: "0xffa066" }
+#    - { index: 17, color: "0xff5d62" }
 
 selection:
   # This string contains all characters that are used as separators for
