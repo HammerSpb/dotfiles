@@ -4,7 +4,7 @@ Public repository for my personal dotfiles.
 
 ## What Is This?
 
-This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything which is needed to install my preffered setup of OS X is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
+This repository serves as my way to help me setup and maintain my Mac.
 
 ## 🚀 Get Up and Running in 5 Minutes
 
@@ -14,18 +14,69 @@ You can configure your Mac in 5 minutes with these steps:
 
 2. [Optional] Install Xcode from the App Store, open it and accept the license agreement
 
-3. Install OS X Command Line Tools
+3. Install `OS X Command Line Tools`
 
-    ```
-    xcode-select --install
-    ```
+   ```
+   xcode-select --install
+   ```
 
-4. Install dotfiles to `~/.dotfiles`
+4. Install `Homebrew`
+
+   ```
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+
+5. Install `git`, `stow`, `fzf`, `zoxide`, `tmux`
+
+   ```
+   brew install git stow fzf zoxide tmux
+   ```
+
+6. Install `JetBrains Mono Nerd font`
+
+   ```
+   brew install font-jetbrains-mono-nerd-font
+   ```
+
+7. Install `Tmux package manager`
+
+   ```
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   ```
+
+8. Install `Alacritty`
+
+   ```
+   brew install --cask alacritty
+   ```
+
+   You might see malicious warning.
+   To fix this you can use the following command:
+
+   ```
+   sudo spctl --master-disable
+   ```
+
+   Launch Alacritty again
+   Followed by the following command
+
+   ```
+   sudo spctl --master-enable
+   ```
+
+9. Clone dotfiles to `~/.dotfiles`
+
+   ```
+   git clone https://github.com/HammerSpb/dotfiles .dotfiles
+   cd ~/.dotfiles
+   ```
+
+10. Configure `TMUX`
+    Launch tmux
     ```
-    git clone https://github.com/HammerSpb/dotfiles
-    cd ~/.dotfiles
-    scripts/bootstrap
+    tmux
     ```
+    Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
 
 ## What you will get
 
@@ -55,7 +106,7 @@ Aliases:
 - `ci` - commit
 - `lg` - log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 - `hist` - log --pretty=format:'%Cred%h %Cgreen(%ad)%Creset - %s%d %C(bold blue)[%an]%Creset' --graph --date=short
-[
+  [
 
 ### Fonts
 
@@ -87,7 +138,7 @@ Other useful apps
 - `iterm2` - Terminal emulator for macOS that does amazing things
 - `caffeine` - Prevent your Mac from automatically going to sleep, dimming the screen or starting screen savers
 - `rectangle` - Move and resize windows in macOS using keyboard shortcuts or snap areas
-- `dropbox` - File hosting service 
+- `dropbox` - File hosting service
 - `mysqlworkbench` - Visual database design tool that integrates SQL development, administration, database design, creation and maintenance into a single integrated development environment for the MySQL database system
 - `sequel-pro` - Fast, easy-to-use Mac database management application for working with MySQL databases
 - `tableplus` - Modern, native client with intuitive GUI tools to create, access, query & edit multiple relational databases: MySQL, PostgreSQL, SQLite, Microsoft SQL Server, ...
@@ -104,13 +155,12 @@ Other useful apps
 - `aerial` - Screen saver
 - `vlc` - Free and open-source portable cross-platform media player software and streaming media server
 
-    
-
 ## Thanks To...
 
 [Holman dotfiles](https://github.com/holman/dotfiles)
 
 Some other interesting projects :earth_africa: :heart:
+
 1. [Github does dotfiles](https://dotfiles.github.io/)
 2. [Zach Holman](https://github.com/holman/dotfiles)
 3. [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
@@ -119,3 +169,4 @@ Some other interesting projects :earth_africa: :heart:
 ## License
 
 The MIT License. Please see [the license file](license.md) for more information.
+
