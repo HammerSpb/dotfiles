@@ -89,8 +89,6 @@ You can configure your Mac in 5 minutes with these steps:
 
 Configured with `catppuccin` `mocha` theme
 
-TBD Picture Placeholder
-
 #### Common Key Bindings
 <pre>
 <kbd>Prefix</kbd> set to <kbd>Cmd</kbd>
@@ -121,13 +119,6 @@ It's configured with: `zsh-syntax-highlighting`, `zsh-completions`, `zsh-autosug
 <kbd>Ctrl</kbd> + <kbd>d</kbd> — Close Current Shell. It’s equivalent to typing “exit” or “logout.”
 <kbd>Ctrl</kbd> + <kbd>z</kbd> — Background/Foreground job. It's suspends the currently running foreground job and moves it to the background. You can later bring it back to the foreground using the “fg” command.
 </pre>
-
-#### Aliases
-
-TDB
-
-
-TDB
 
 ### TMUX
 
@@ -198,11 +189,6 @@ Configured with `catppuccin` `mocha` theme
 </pre>
 
 
-### Zsh
-
-Default shell with `powerlevel9k` theme
-
-### Git
 ## License
 
 The MIT License. Please see [the license file](license.md) for more information.
