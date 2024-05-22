@@ -89,13 +89,36 @@ You can configure your Mac in 5 minutes with these steps:
 
 Configured with `catppuccin` `mocha` theme
 
-#### Aliases
-
-TDB
+#### Common Key Bindings
+<pre>
+<kbd>Prefix</kbd> set to <kbd>Cmd</kbd>
+<kbd>prefix</kbd> + <kbd>0</kbd> - Reset Zoom
+<kbd>prefix</kbd> + <kbd>-</kbd> - Zoom Out
+<kbd>prefix</kbd> + <kbd>+</kbd> - Zoom In
+</pre>
 
 ### ZSH
 
-TDB
+ZSH configured with `Powerlevel10k` prompt and `ZInit` plugin manager.
+It's configured with: `zsh-syntax-highlighting`, `zsh-completions`, `zsh-autosuggestions`, `fzf-tab` and `zoxide`
+
+#### Common Key Bindings
+<pre>
+<kbd>Prefix</kbd> set to <kbd>Cmd</kbd>
+<kbd>Ctrl</kbd> + <kbd>r</kbd> - Reverse search or History search with `fzf`
+<kbd>Ctrl</kbd> + <kbd>n</kbd> - Navigate `forward` or `down`
+<kbd>Ctrl</kbd> + <kbd>p</kbd> - Navigate `backward` or `up`
+<kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>e</kbd> - Move cursor to beginning/end of command
+<kbd>Alt</kbd> + <kbd>f</kbd> or <kbd>b</kbd> -  Move cursor to previous/next word
+</pre>
+
+#### Process
+<pre>
+<kbd>Ctrl</kbd> + <kbd>l</kbd> — Clear screen. It’s equivalent to the “clear” command.
+<kbd>Ctrl</kbd> + <kbd>c</kbd> — Interrupt/Kill. Use it to send an interrupt signal to the currently running command, effectively terminating its execution.
+<kbd>Ctrl</kbd> + <kbd>d</kbd> — Close Current Shell. It’s equivalent to typing “exit” or “logout.”
+<kbd>Ctrl</kbd> + <kbd>z</kbd> — Background/Foreground job. It's suspends the currently running foreground job and moves it to the background. You can later bring it back to the foreground using the “fg” command.
+</pre>
 
 ### TMUX
 
@@ -166,11 +189,6 @@ Configured with `catppuccin` `mocha` theme
 </pre>
 
 
-### Zsh
-
-Default shell with `powerlevel9k` theme
-
-### Git
 ## License
 
 The MIT License. Please see [the license file](license.md) for more information.
