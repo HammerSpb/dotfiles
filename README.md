@@ -26,10 +26,10 @@ You can configure your Mac in 5 minutes with these steps:
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-5. Install `git`, `stow`, `fzf`, `zoxide`, `tmux`
+5. Install `git`, `stow`, `fzf`, `zoxide`, `tmux`, `wget`, `bat`, `node`, `neovim`, `ripgrep`
 
    ```
-   brew install git stow fzf zoxide tmux
+   brew install git stow fzf zoxide tmux wget bat node neovim ripgre
    ```
 
 6. Install `JetBrains Mono Nerd font`
