@@ -23,6 +23,9 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Custom scripts
+source "$HOME/.config/bin/fzf_git.sh"
+
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -93,6 +96,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias df="df -hl"
+
+path+=('~/.config/bin')
+export PATH
 
 ssh() {
     if [ -n "$TMUX" ]; then
