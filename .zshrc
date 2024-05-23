@@ -23,6 +23,11 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# You may need to manually set your language environment
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+
 # Add in Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
@@ -74,14 +79,30 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 if ls --help 2>&1 | grep -q -- --color
 then
-    alias ls='ls --color=auto -F'
+    alias ls='ls -l --color=auto -F'
     alias lsa='ls -la --color=auto -F'
 else
-    alias ls='ls -FG'
+    alias ls='ls -l -FG'
     alias lsa='ls -la -FG'
 fi
-alias nvim='nvim'
 alias c='clear'
+alias vim="nvim"
+alias vi="nvim"
+alias t="todo.sh"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias df="df -hl"
+
+ssh() {
+    if [ -n "$TMUX" ]; then
+        tmux -2u rename-window "$(echo $* | rev | cut -d '@' -f1 | rev)";
+        command ssh "$@";
+        tmux -2u set-window-option automatic-rename "on" > /dev/null;
+    else
+        command ssh "$@";
+    fi
+}
 
 
 # Shell integrations
