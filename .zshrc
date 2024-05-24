@@ -76,18 +76,13 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -G $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls -G $realpath'
 
 # Aliases
-if ls --help 2>&1 | grep -q -- --color
-then
-    alias ls='ls -l --color=auto -F'
-    alias lsa='ls -la --color=auto -F'
-else
-    alias ls='ls -l -FG'
-    alias lsa='ls -la -FG'
-fi
+alias ls='ls -l -FG'
+alias lsa='ls -la -FG'
+
 alias c='clear'
 alias vim="nvim"
 alias vi="nvim"
