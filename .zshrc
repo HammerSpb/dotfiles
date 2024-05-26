@@ -80,8 +80,10 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -G $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls -G $realpath'
 
 # Aliases
-alias ls='ls -l -FG'
-alias lsa='ls -la -FG'
+alias ls='eza -l --icons --git --color=always --group-directories-first'
+alias lsa='eza -la --icons --git --color=always --group-directories-first'
+alias lt="eza --tree  --git-ignore --level=2 --long --icons --git --group-directories-first"
+alias lta="eza --tree --git-ignore --level=2 --long -a --icons --git --group-directories-first"
 
 alias c='clear'
 alias vim="nvim"
@@ -92,8 +94,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias df="df -hl"
 
-path+=('~/.config/bin')
-export PATH
+cx() { cd "$@" && l; }
+
+export PATH=~/.config/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
 ssh() {
     if [ -n "$TMUX" ]; then
