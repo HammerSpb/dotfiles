@@ -121,6 +121,9 @@ url:
 
 live_config_reload: true
 
+env:
+  TERM: xterm-256color
+
 key_bindings:
   - { key: A, mods: Alt, chars: "\x1ba" }
   - { key: B, mods: Alt, chars: "\x1bb" }
