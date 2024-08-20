@@ -83,6 +83,13 @@ You can configure your Mac in 5 minutes with these steps:
     ```
     Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
 
+11. Configure `MacOS` default
+    Run macos_defaults.sh
+    ```
+    sudo chmod +x ./macos_defaults.sh
+    ./macos_defaults.sh
+    ```
+
 ## What you will get
 
 ### Alacritty
