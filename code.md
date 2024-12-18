@@ -41,7 +41,16 @@ Chapters for domains like Search algorithms, Selection algorithms and Sorting al
 | Interpolation Search| O(1)                        | O(loglogN)               | O(N)           | O(1)             |  
 
 - A table explaining the concepts of each algorithm in short.  
-- C++ code snippets of specific algorithms.  
+- C++ code snippets of specific algorithms.
+
+```cpp
+bool hashSetSearch(const vector<int>& vec, int target) {
+    // Initialize set with vector elements
+    unordered_set<int> hashSet(vec.begin(), vec.end());
+
+    return hashSet.find(target) != hashSet.end();
+}
+```
 
 Other chapters like Dynamic Programming & Permutation algorithms:  
 - List core problems with a to-the-point explanation with corresponding C++ code snippet.  
