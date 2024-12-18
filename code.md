@@ -83,6 +83,12 @@ Time and Space Complexity of different Search Algorithms:
 | Self Adjusting BST      | O(1)      | O(logN)      | O(logN)    | O(N)                       |  
 | Hash Set                | O(1)      | O(1)         | O(1)       | O(N)                       |  
 
+Core ideas:
+- The basic approach is if the N elements are stored in an array, one can search elements one by one. [Linear Search]  
+- Optimized approaches exist: if elements are in sorted order [Binary Search] or if the distribution of the elements is known [Interpolation Search].  
+- The N elements can be stored in any data structure.  
+- If the elements are stored in a Hash Set, then search can be performed in constant O(1) time.  
+
 Core idea of the different search algorithms:
 
 | Search Algorithms       | Core Idea                                                                                              | When to use?                                 |  
@@ -95,8 +101,10 @@ Core idea of the different search algorithms:
 | Self Adjusting BST      | Same as BST.                                                                                          | Same as BST. This avoids the worst case in BST.        |
 | Hash Set                | Use the target element as a key (think as index in array) in hash set and check if it exists.         | When multiple search queries are performed and space is flexible. Preparing hash set will take O(N) time. |
 
-Core ideas:
-- The basic approach is if the N elements are stored in an array, one can search elements one by one. [Linear Search]  
-- Optimized approaches exist: if elements are in sorted order [Binary Search] or if the distribution of the elements is known [Interpolation Search].  
-- The N elements can be stored in any data structure.  
-- If the elements are stored in a Hash Set, then search can be performed in constant O(1) time.  
+Code snippet of Linear Search:
+
+```cpp
+#include <vector>  using namespace std;  // Search target in vector vec and return the index else return -1 (invalid index)  int linearSearch(const vector<int>& vec, int target) {      for (int i = 0; i < vec.size(); ++i) {          if (vec[i] == target) {              return i;              // Return index if found          }      }      return -1;      // Return -1 if not found  }  int main() {      vector<int> vec = {10, 20, 30, 40, 50};      int target = 30;
+int index = linearSearch(vec, target);      if (index != -1) {          cout << "Element found at index " << index << endl;      } else {          cout << "Element not found" << endl;      }      return 0;  }
+
+```
