@@ -1,6 +1,6 @@
 TABLE OF CONTENTS
 
-How to use DSA Takeover?
+[How to use DSA Takeover?](#How to use DSA Takeover?)
 CHEATSHEET: Search Algorithms  
 CHEATSHEET: Selection Algorithms  
 CHEATSHEET: Sorting Algorithms  
@@ -23,7 +23,7 @@ CONCLUDING NOTE
 
 ---
 
-How to use DSA Takeover?
+# How to use DSA Takeover?
 
 This book is uniquely structured to help you learn all core concepts in Data Structures and Algorithms.  
 
