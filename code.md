@@ -89,7 +89,11 @@ Core idea of the different search algorithms:
 |-------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------|  
 | Linear Search           | Search element one by one.                                                                           | When dataset is small (N <= 47).           |  
 | Binary Search           | Compare with the middle element. If it did not match and is less than the target, continue in the left half or else continue in the right half. | When data is sorted. If not sorted, consider the sorting complexity of O(N logN). |  
-| Interpolation Search    | Predict the position of target assuming the distribution pattern of data. If it matches, it is efficient. | When data is sorted and follows a fixed distribution pattern. |
+| Interpolation Search    | Predict the position of target assuming the distribution pattern of data. If it matches, it is  fine. If current element is less than target, continue the search in left half or else on the right half. | When data is sorted and follows a fixed distribution pattern. |
+| Binary Tree             | Traverse nodes and search one by one.                                           | Same as Linear Search. Only if data is already in a Binary Tree.             |
+| Binary Search Tree      | Traverse nodes, go to left child node if current node value is greater than target or if less, go to right child node. | Similar to Binary Search. Only if data is already in BST. Creating BST will take O(N) time if data is already sorted. |
+| Self Adjusting BST      | Same as BST.                                                                                          | Same as BST. This avoids the worst case in BST.        |
+| Hash Set                | Use the target element as a key (think as index in array) in hash set and check if it exists.         | When multiple search queries are performed and space is flexible. Preparing hash set will take O(N) time. |
 
 Core ideas:
 - The basic approach is if the N elements are stored in an array, one can search elements one by one. [Linear Search]  
