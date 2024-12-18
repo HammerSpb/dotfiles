@@ -36,8 +36,7 @@ Chapters for domains like Search algorithms, Selection algorithms and Sorting al
 |---------------------|------------------------------|---------------------------|----------------|------------------|  
 |                     | Best case                   | Average case             | Worst case     |                  |  
 | Linear Search       | O(1)                        | O(N)                     | O(N)           | O(N)             |  
-| Binary Search       | O(1)                        | O(logN)                  | O(logN)        | O(1): iterative, |  
-|                     |                             |                          |                | O(logN): recursive|  
+| Binary Search       | O(1)                        | O(logN)                  | O(logN)        | O(1): iterative, O(logN): recursive|  
 | Interpolation Search| O(1)                        | O(loglogN)               | O(N)           | O(1)             |  
 
 - A table explaining the concepts of each algorithm in short.  
