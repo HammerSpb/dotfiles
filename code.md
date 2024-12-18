@@ -3,24 +3,24 @@ TABLE OF CONTENTS
 [How to use DSA Takeover?](#How-to-use-dsa-takeover)
 
 [CHEATSHEET: Search Algorithms](#cheatsheet-search-algorithms)
-CHEATSHEET: Selection Algorithms  
-CHEATSHEET: Sorting Algorithms  
-CHEATSHEET: Basic calculations  
-CHEATSHEET: Arithmetic Operations (Complexity Analysis)  
-CHEATSHEET: Exponentiation Algorithms  
-CHEATSHEET: Recursion & Iterative algorithms  
-VISUALIZE: Basic Data Structures  
-CHEATSHEET: Array  
-CHEATSHEET: Stack  
-CHEATSHEET: Linked List  
-CHEATSHEET: Greedy Algorithms  
-CHEATSHEET: Dynamic Programming [DP]  
-CHEATSHEET: Permutation Algorithms  
-CHEATSHEET: Bitwise Algorithms  
-CHEATSHEET: String Algorithms  
-CHEATSHEET: Graph Algorithms  
-CHEATSHEET: Crazy Hard Problems  
-CONCLUDING NOTE  
+[CHEATSHEET: Selection Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Sorting Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Basic calculations](#cheatsheet-_-algorithms)
+[CHEATSHEET: Arithmetic Operations (Complexity Analysis)](#cheatsheet-_-algorithms)  
+[CHEATSHEET: Exponentiation Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Recursion & Iterative algorithms](#cheatsheet-_-algorithms)
+[VISUALIZE: Basic Data Structures](#cheatsheet-_-algorithms)
+[CHEATSHEET: Array](#cheatsheet-_-algorithms)
+[CHEATSHEET: Stack](#cheatsheet-_-algorithms)
+[CHEATSHEET: Linked List](#cheatsheet-_-algorithms)
+[CHEATSHEET: Greedy Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Dynamic Programming](#cheatsheet-_-algorithms)
+[CHEATSHEET: Permutation Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Bitwise Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: String Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Graph Algorithms](#cheatsheet-_-algorithms)
+[CHEATSHEET: Crazy Hard Problems](#cheatsheet-_-algorithms)
+[CONCLUDING NOTE](#cheatsheet-_-algorithms)
 
 ---
 
