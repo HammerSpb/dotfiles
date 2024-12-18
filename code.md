@@ -105,21 +105,24 @@ Code snippet of Linear Search:
 
 ```cpp
 #include <vector>
+
 using namespace std;
+
 // Search target in vector vec and return the index else return -1 (invalid index)
 int linearSearch(const vector<int>& vec, int target) {
     for (int i = 0; i < vec.size(); ++i) {
         if (vec[i] == target) {
-            return i;              // Return index if found
+            return i; // Return index if found
         }
     }
-    return -1;      // Return -1 if not found
+    return -1; // Return -1 if not found
 }
 
 int main() {
       vector<int> vec = {10, 20, 30, 40, 50};
       int target = 30;
       int index = linearSearch(vec, target);
+
       if (index != -1) {
          cout << "Element found at index " << index << endl;
       } else {
@@ -128,4 +131,64 @@ int main() {
       return 0;
   }
 
+```
+
+Code snippet of Binary Search:
+
+```cpp
+// Vector vec is in sorted order
+// Sorted vector is a pre-requisite for Binary Search
+int binarySearch(const vector<int>& vec, int target) {
+      // Search target between index “low” and “high”
+      int low = 0;
+      int high = vec.size() - 1;
+      while (low <= high) {
+          // Find the middle element of the array
+          int mid = low + (high - low) / 2;
+
+          ​// Check if middle element is the target
+          ​// Or check if target might be in left or right side of the middle element (possible as vector is in sorted order)
+          if (vec[mid] == target) {
+              return mid;
+              // Element found
+              ​// If middle element is < target, then target must be in right side (larger elements)
+          } else if (vec[mid] < target) {
+              low = mid + 1;
+          } else {
+  ​            // Target might be in left side
+              high = mid - 1;
+          }
+  ​        // Low and high are updated. Continue search.
+      }
+      return -1; // Element not found
+  }
+
+```
+
+Why time complexity of Binary Search is O(logN) in worst case?
+
+In Binary Search, we are reducing the number of elements to be searched by a factor of 2 at each step. So, we have searched the entire set when the number of elements to be searched becomes 1 or 0.
+
+Number of elements to be searched:  
+Step 1: N  
+Step 2: N/2  
+Step 3: N/4  
+…  
+Step M-1: 1 or 0  
+
+M = number of times N can be divided by 2.  
+This is the maximum power of 2 in N which is logN.
+
+Also note:  
+- Number of bits required to represent N is logN.  
+- Largest integer represented by M bits is 2^(M-1).
+
+Code snippet of search using Hash Set:
+
+```cpp
+bool hashSetSearch(const vector<int>& vec, int target) {
+      // Initialize set with vector elements
+      unordered_set<int> hashSet(vec.begin(), vec.end());
+      return hashSet.find(target) != hashSet.end();
+}
 ```
