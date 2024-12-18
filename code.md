@@ -104,7 +104,28 @@ Core idea of the different search algorithms:
 Code snippet of Linear Search:
 
 ```cpp
-#include <vector>  using namespace std;  // Search target in vector vec and return the index else return -1 (invalid index)  int linearSearch(const vector<int>& vec, int target) {      for (int i = 0; i < vec.size(); ++i) {          if (vec[i] == target) {              return i;              // Return index if found          }      }      return -1;      // Return -1 if not found  }  int main() {      vector<int> vec = {10, 20, 30, 40, 50};      int target = 30;
-int index = linearSearch(vec, target);      if (index != -1) {          cout << "Element found at index " << index << endl;      } else {          cout << "Element not found" << endl;      }      return 0;  }
+#include <vector>
+using namespace std;
+// Search target in vector vec and return the index else return -1 (invalid index)
+int linearSearch(const vector<int>& vec, int target) {
+    for (int i = 0; i < vec.size(); ++i) {
+        if (vec[i] == target) {
+            return i;              // Return index if found
+        }
+    }
+    return -1;      // Return -1 if not found
+}
+
+int main() {
+      vector<int> vec = {10, 20, 30, 40, 50};
+      int target = 30;
+      int index = linearSearch(vec, target);
+      if (index != -1) {
+         cout << "Element found at index " << index << endl;
+      } else {
+          cout << "Element not found" << endl;
+      }
+      return 0;
+  }
 
 ```
