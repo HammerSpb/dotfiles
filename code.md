@@ -2,7 +2,7 @@ TABLE OF CONTENTS
 
 [How to use DSA Takeover?](#How-to-use-dsa-takeover)
 
-CHEATSHEET: Search Algorithms  
+[CHEATSHEET: Search Algorithms](#cheatsheet-search-algorithms)
 CHEATSHEET: Selection Algorithms  
 CHEATSHEET: Sorting Algorithms  
 CHEATSHEET: Basic calculations  
@@ -58,7 +58,7 @@ For best results, you are suggested to:
 
 ---
 
-CHEATSHEET: Search Algorithms
+# CHEATSHEET: Search Algorithms
 
 Search Problem: Given a set of N elements and a target element X, we need to check if X exists in the set of N elements.
 
