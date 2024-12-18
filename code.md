@@ -1,6 +1,7 @@
 TABLE OF CONTENTS
 
-[How to use DSA Takeover?](#-How-to-use-DSA-Takeover?)
+[How to use DSA Takeover?](#-How-to-use-dsa-takeover?)
+
 CHEATSHEET: Search Algorithms  
 CHEATSHEET: Selection Algorithms  
 CHEATSHEET: Sorting Algorithms  
